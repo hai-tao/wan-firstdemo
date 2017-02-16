@@ -4,5 +4,6 @@ function drag(id){
  		var disx=0;
  		var disy=0;
  		var wan="hai";
+
  	}
 }
