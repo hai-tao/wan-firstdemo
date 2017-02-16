@@ -1,15 +1,22 @@
 function drag(id){
  	var obj=document.getElementById(id);
- 	ogj.onmousedown=function(ev){
- 		var disx=0;
- 		var disy=0;
- 		var wan="hai";
- 		disx=ev.pageX-obj.offsetLeft;
- 		disy=ev.pageY-obj.offsetTop;
- 		document.onmousemove=function(){
- 			var haha="haha"
- 			var bbb="bbb";
+ 	var disX=0;
+ 	var disY=0;
+ 	obj.onmousedown=function(ev){
+ 		
+ 	
+ 		disX=ev.pageX-obj.offsetLeft;
+ 		disY=ev.pageY-obj.offsetTop;
+ 		document.onmousemove=function(ev){
+ 			obj.style.left=ev.pageX-disX+'px';
+ 			obj.style.top=ev.pageY-disY+'px';
 
  		};
+ 		document.onmouseup=function(){
+ 			document.onmousemove=null;
+ 			document.onmouseup=null;
+ 		};
+
  	}
+ 	return false;
 }
