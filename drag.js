@@ -8,6 +8,7 @@ function drag(id){
  		disy=ev.pageY-obj.offsetTop;
  		document.onmousemove=function(){
  			var haha="haha"
+ 			var bbb="bbb"
  		};
  	}
 }
