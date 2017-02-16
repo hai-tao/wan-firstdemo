@@ -3,5 +3,6 @@ function drag(id){
  	ogj.onmousedown=function(){
  		var disx=0;
  		var disy=0;
+		var a=11;
  	}
 }
